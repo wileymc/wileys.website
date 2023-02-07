@@ -1,5 +1,7 @@
 import Doodle from "@/components/Doodle";
+import { Header } from "@/components/Header";
 import Head from "next/head";
+import Link from "next/link";
 import {
   AiFillTwitterCircle,
   AiFillInstagram,
@@ -17,24 +19,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="antialiased max-w-3xl mb-40 flex flex-col mx-4 mt-8 md:mt-20 lg:mt-32 lg:mx-auto text-white">
-        <nav className="flex flex-row gap-4 h-fit w-full mb-4 ">
-          <Doodle />
-          <div className="flex flex-col leading-5 ">
-            <h1 className="font-sans uppercase text-2xl leading-5 mb-1 font-bold">
-              Wiley McKay Conte
-            </h1>
-            <ul className="flex gap-4 font-sans uppercase text-lg font-bold">
-              <li className="hover:text-blue-500  cursor-pointer transition-all">
-                Code
-              </li>
-              <li className="text-green-500  cursor-pointer">Music</li>
-            </ul>
-            <ul className="flex font-sans uppercase text-md">
-              <li className="text-blue-400  cursor-pointer">Booklist</li>
-            </ul>
-          </div>
-        </nav>
-
+        <Header />
         <p className="font-serif text-xl">
           Thanks for stopping by. I’m a programmer with a background in
           economics and ecological agriculture. I am fascinated by
@@ -45,7 +30,7 @@ export default function Home() {
           with{" "}
           <a
             href="https://driift.live"
-            className="underline decoration-dotted decoration-purple-400 hover:text-purple-200"
+            className="underline decoration-dotted decoration-indigo-400 hover:text-indigo-200"
           >
             Driift
           </a>

@@ -1,12 +1,12 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
-import { Roboto, Merriweather } from "@next/font/google";
+import { Arimo, Merriweather } from "@next/font/google";
 import clsx from "clsx";
 
-const roboto = Roboto({
+const arimo = Arimo({
   weight: "400",
   subsets: ["latin"],
-  variable: "--font-roboto",
+  variable: "--font-arimo",
   display: "swap",
 });
 
@@ -19,7 +19,7 @@ const merriweather = Merriweather({
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div className={clsx(roboto.variable, merriweather.variable)}>
+    <div className={clsx(arimo.variable, merriweather.variable)}>
       <Component {...pageProps} />
     </div>
   );

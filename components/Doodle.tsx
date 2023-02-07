@@ -1,7 +1,7 @@
 import "css-doodle";
 
-export default function Doodle({ width = "68px" }) {
-  const gridColumns = 9;
+export default function Doodle({ width = "45px" }) {
+  const gridColumns = 12;
   return (
     <css-doodle>
       {`:doodle {
