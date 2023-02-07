@@ -4,6 +4,16 @@
 
 html, body {
   background-color: #0a0e13;
+  /*Linear gradient... */
+  background: 
+    radial-gradient(
+     at center, #1b2140, #020202
+    );
+  top:0px;
+  left:0px;
+  height:100%;
+  width:100%;
+  overflow: scroll;
   display: flex;
   flex-direction: column;
   height: 100%;

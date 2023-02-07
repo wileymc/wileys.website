@@ -10,7 +10,7 @@ export default function Books() {
         {books.map((book) => (
           <div
             key={book.title}
-            className="rounded bg-glass border border-glass p-4 mb-4 font-serif grid grid-cols-[150px_auto] gap-4 h-fit"
+            className="rounded bg-glass border border-slate-700 p-4 mb-4 font-serif grid grid-cols-[150px_auto] gap-4 h-fit backdrop-blur-md	"
           >
             <Image
               src={book.thumbnail}
@@ -32,7 +32,7 @@ export default function Books() {
               {book.quotes?.map((quote) => (
                 <blockquote
                   key={quote}
-                  className="p-4 my-4 border-l-4 dark:border-indigo-500 dark:bg-gray-800 rounded"
+                  className="p-4 mt-4 border-l-4 dark:border-indigo-500 dark:bg-gray-800 rounded"
                 >
                   {quote}
                 </blockquote>
