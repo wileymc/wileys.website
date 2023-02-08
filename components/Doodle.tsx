@@ -2,7 +2,6 @@ import "css-doodle";
 
 export default function Doodle({ width = "45px" }) {
   return (
-    // @ts-ignore
     <css-doodle>
       {`:doodle {
           @grid: 8 / ${width};
@@ -24,7 +23,6 @@ export default function Doodle({ width = "45px" }) {
           70%, 40%, @r.8
         );
   `}
-      {/* @ts-ignore */}
     </css-doodle>
   );
 }
