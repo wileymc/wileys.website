@@ -8,20 +8,19 @@ import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 
 export function Footer() {
-  const { i18n } = useTranslation();
+  const { i18n } = useTranslation(["common"]);
   const router = useRouter();
+  const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const { pathname, asPath, query } = router;
+    router.push({ pathname, query }, asPath, { locale: e.target.value });
+  };
   return (
     <footer className="mt-8  text-white">
       <div className="flex justify-between items-center">
         <select
           className="bg-glass font-sans p-2 rounded-full border border-slate-800 cursor-pointer text-xs"
-          onChange={(e) => {
-            i18n.changeLanguage(e.target.value);
-            router.push(router.asPath, router.asPath, {
-              locale: e.target.value,
-              scroll: false,
-            });
-          }}
+          onChange={handleLanguageChange}
+          value={i18n.language}
         >
           <option value="en">English</option>
           <option value="es">Español</option>

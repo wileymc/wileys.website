@@ -1,9 +1,9 @@
 import Link from "next/link";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 import Doodle from "./Doodle";
 
 export default function Header() {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation(["common"]);
   return (
     <nav className="flex flex-row gap-4 w-full mb-8 leading-none h-[45px] m-auto">
       <Link href="/">
