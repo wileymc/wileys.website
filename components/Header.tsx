@@ -22,9 +22,11 @@ export default function Header() {
               {t("code")}
             </li>
           </a>
-          <li className="hover:text-indigo-400  cursor-pointer transition-all duration-300">
-            {t("music")}
-          </li>
+          <a href="https://open.spotify.com/user/1212002891">
+            <li className="hover:text-indigo-400  cursor-pointer transition-all duration-300">
+              {t("music")}
+            </li>
+          </a>
           <Link href="/books">
             <li className="hover:text-violet-400  cursor-pointer transition-all duration-300">
               {t("booklist")}
