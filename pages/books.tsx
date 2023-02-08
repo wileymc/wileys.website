@@ -1,6 +1,18 @@
-import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 import { books } from "books";
 import Image from "next/image";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import nextI18nextConfig from "@/next-i18next.config";
+import dynamic from "next/dynamic";
+import Header from "@/components/Header";
+
+export async function getServerSideProps({ locale }: { locale: string }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common"], nextI18nextConfig)),
+    },
+  };
+}
 
 export default function Books() {
   return (
@@ -41,6 +53,7 @@ export default function Books() {
           </div>
         ))}
       </div>
+      <Footer />
     </main>
   );
 }

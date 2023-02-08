@@ -7,8 +7,9 @@ html, body {
   /*Linear gradient... */
   background: 
     radial-gradient(
-     at center, #1b2140, #020202
+     closest-side, #0a081c, #020202
     );
+  color: whitesmoke;
   top:0px;
   left:0px;
   height:100%;

@@ -1,23 +1,30 @@
 import "css-doodle";
 
 export default function Doodle({ width = "45px" }) {
-  const gridColumns = 12;
   return (
+    // @ts-ignore
     <css-doodle>
       {`:doodle {
-            @grid: ${gridColumns} / ${width};
+          @grid: 8 / ${width};
+          @shape: circle;
+          --s: 0;
         }
-        clip-path: @shape(
-            fill: evenodd;
-            points: 36;
-            scale: .45;
-            x: cos(9t) + cos(3t);
-            y: sin(9t) + sin(5t);
+
+        :doodle(:hover) {
+          --s: 1.5;
+        }
+
+        transition: .3s @r(.6s);
+        border-radius: @pick(25% 0, 0 100%);
+        transform: scale(@r(.1, 1.25));
+        transform: translateY(calc(var(--s) * 100%));
+
+        background: hsla(
+          calc(245 - 1 * @x * @y),
+          70%, 40%, @r.8
         );
-        --hue: calc(70 + 5 * @row * @col);
-        background: hsl(var(--hue), 70%, 80%);
-        transition: @r(2s) ease-in;
   `}
+      {/* @ts-ignore */}
     </css-doodle>
   );
 }
