@@ -25,9 +25,8 @@ export default function Home() {
       </Head>
       <main className="antialiased max-w-3xl mb-40 flex flex-col mx-8 mt-8 md:mt-20 lg:mt-32 lg:mx-auto text-">
         <Header />
-        <p className="font-serif text-xl mb-4">{t("bio-p-1")}</p>
         <p className="font-serif text-xl">
-          <Trans i18nKey="bio-p-2">
+          <Trans i18nKey="bio">
             <a
               href="https://driift.live"
               className="underline decoration-dotted decoration-indigo-400 hover:text-indigo-200"

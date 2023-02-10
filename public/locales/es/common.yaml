@@ -1,5 +1,9 @@
-code: "codigo"
-music: "música"
-booklist: "libros"
-bio-p-1: "Gracias por venir. Soy un programador que trabaja en tecnologías que ayudan a la gente a interactuar con el mundo real. Me encanta codificar, hacer música y arte, y pasar tiempo con personas excepcionales en lugares excepcionales"
-bio-p-2: "Actualmente, estoy construyendo la principal plataforma de transmisión de conciertos en vivo con <0>Driift</0>. También cofundé <1>Populist</1>, una plataforma de compromiso cívico que facilita las conexiones entre ciudadanos, organizaciones y gobiernos. Siempre estoy abierto a nuevas conversaciones—puedes contactarme en cualquiera de los canales a continuación"
+code: codigo
+music: música
+booklist: libros
+bio: > 
+  Bienvenido a mi sitio web. Soy un programador en <0>Driift</0>, donde mi equipo está construyendo 
+  la principal plataforma de transmisión de conciertos en vivo.
+  También cofundé <1>Populist</1>, una plataforma de compromiso cívico que facilita las conexiones
+  entre ciudadanos, organizaciones y gobiernos. Siempre estoy abierto a nuevas conversaciones—tú
+  puede ponerse en contacto conmigo en cualquiera de los canales a continuación.

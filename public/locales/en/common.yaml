@@ -1,5 +1,9 @@
-code: "code"
-music: "music"
-booklist: "booklist"
-bio-p-1: "Thanks for stopping by. I’m a programmer working on technologies that help people interface with the real world. I love to code, make music and art, and spend time with exceptional people in exceptional places."
-bio-p-2: "Currently, I am building the premiere live concert streaming platform with <0>Driift</0>. I also cofounded <1>Populist</1>, a civic engagement platform that facilitates connections between citizens, organizations, and governments. I am always open to new conversations—you can reach me on any of the channels below."
+code: code
+music: music
+booklist: booklist
+bio: >
+  Welcome to my website. I'm a programmer at <0>Driift</0>, where my team is 
+  building the premiere live concert streaming platform.
+  I also cofounded <1>Populist</1>, a civic engagement platform that facilitates connections 
+  between citizens, organizations, and governments. I am always open to new conversations—you 
+  can reach me on any of the channels below.
