@@ -52,7 +52,7 @@ export default function Books() {
                 {book.quotes?.map((quote) => (
                   <blockquote
                     key={quote}
-                    className="p-4 mt-4 border-l-4 dark:border-indigo-500 dark:bg-gray-800 rounded"
+                    className="p-4 mt-4 border-l-4 dark:border-lagoon dark:bg-glass rounded"
                   >
                     {quote}
                   </blockquote>

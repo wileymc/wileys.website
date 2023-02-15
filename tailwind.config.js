@@ -9,7 +9,10 @@ module.exports = {
     extend: {
       colors: {
         "background": "#0a0e13",
-        "glass": "#1b23316f",
+        "glass": "#1822326d",
+        "cobalt": "rgb(32, 73, 238)",
+        
+        "lagoon": "rgb(29, 170, 189)"
       },
       fontFamily: {
         sans: ["var(--font-arimo)"],

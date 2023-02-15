@@ -19,8 +19,8 @@ export default function Doodle({ width = "45px" }) {
         transform: translateY(calc(var(--s) * 100%));
 
         background: hsla(
-          calc(245 - 1 * @x * @y),
-          70%, 40%, @r.8
+          calc(240 - 1 * @x * @y),
+          80%, 40%, @r.8
         );
   `}
     </css-doodle>
