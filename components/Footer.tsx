@@ -31,7 +31,7 @@ export function Footer() {
             href="https://twitter.com/wileymckayconte"
             target="_blank"
             rel="noreferrer"
-            className="hover:text-blue-400  cursor-pointer transition-all duration-300"
+            className="hover:text-lagoon  cursor-pointer transition-all duration-300"
           >
             <AiFillTwitterCircle size="1.5rem" />
           </a>
@@ -39,7 +39,7 @@ export function Footer() {
             href="https://instagram.com/wileybaba"
             target="_blank"
             rel="noreferrer"
-            className="hover:text-indigo-400  cursor-pointer transition-all duration-300"
+            className="hover:text-lagoon  cursor-pointer transition-all duration-300"
           >
             <AiFillInstagram size="1.5rem" />
           </a>
@@ -48,7 +48,7 @@ export function Footer() {
             title="email wiley"
             target="_blank"
             rel="noreferrer"
-            className="hover:text-violet-400  cursor-pointer transition-all duration-300"
+            className="hover:text-lagoon  cursor-pointer transition-all duration-300"
           >
             <AiFillMail size="1.5rem" />
           </a>
@@ -57,7 +57,7 @@ export function Footer() {
             target="_blank"
             rel="noreferrer"
             title="fork this site"
-            className="hover:text-purple-400  cursor-pointer transition-all duration-300"
+            className="hover:text-lagoon  cursor-pointer transition-all duration-300"
           >
             <FaCodeBranch size="1.5rem" />
           </a>

@@ -16,7 +16,7 @@ export default function Header() {
         </div>
       </Link>
       <div className="flex flex-col font-sans">
-        <h1 className="font-sans text-2xl mt-[-7px] mb-1 bg-gradient-to-r from-cobalt to-lagoon inline-block text-transparent bg-clip-text">
+        <h1 className="font-sans text-2xl mt-[-7px] mb-1 bg-gradient-to-r from-cobalt to-lagoon inline-block text-transparent bg-clip-text font-bold">
           Wiley McKay Conte
         </h1>
         <ul className="flex gap-4 font-sans uppercase text-l font-bold leading-5">

@@ -10,9 +10,9 @@ module.exports = {
       colors: {
         "background": "#0a0e13",
         "glass": "#1822326d",
-        "cobalt": "rgb(32, 73, 238)",
-        
-        "lagoon": "rgb(29, 170, 189)"
+        "cobalt": "#354cfb",
+        "lagoon": "rgb(29, 170, 189)",
+        "lagoon-200": "rgb(165, 237, 247)"
       },
       fontFamily: {
         sans: ["var(--font-arimo)"],

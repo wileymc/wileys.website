@@ -29,13 +29,13 @@ export default function Home() {
           <Trans i18nKey="bio">
             <a
               href="https://driift.live"
-              className="underline decoration-dotted decoration-indigo-400 hover:text-indigo-200"
+              className="underline decoration-dotted decoration-lagoon hover:text-lagoon-200"
             >
               Driift.
             </a>
             <a
               href="https://populist.us"
-              className="underline decoration-dotted decoration-indigo-400 hover:text-indigo-200"
+              className="underline decoration-dotted decoration-lagoon hover:text-lagoon-200"
             >
               Populist
             </a>
