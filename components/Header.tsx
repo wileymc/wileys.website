@@ -1,10 +1,13 @@
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
 import dynamic from "next/dynamic";
+import clsx from "clsx";
+import { useRouter } from "next/router";
 const Doodle = dynamic(() => import("./Doodle"), { ssr: false });
 
 export default function Header() {
   const { t } = useTranslation(["common"]);
+  const router = useRouter();
   return (
     <nav className="flex flex-row gap-4 w-full mb-8 leading-none h-[45px] m-auto">
       <Link href="/">
@@ -28,7 +31,14 @@ export default function Header() {
             </li>
           </a>
           <Link href="/books">
-            <li className="hover:text-violet-400  cursor-pointer transition-all duration-300">
+            <li
+              className={clsx(
+                "hover:text-purple-400  cursor-pointer transition-all duration-300",
+                {
+                  ["border-b border-b-purple-400"]: router.pathname == "/books",
+                }
+              )}
+            >
               {t("booklist")}
             </li>
           </Link>
