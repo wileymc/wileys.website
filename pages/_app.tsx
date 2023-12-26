@@ -1,18 +1,18 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
-import { Arimo, Merriweather } from "@next/font/google";
+import { Yanone_Kaffeesatz, Merriweather } from "@next/font/google";
 import clsx from "clsx";
 import { appWithTranslation } from "next-i18next";
 
-const arimo = Arimo({
-  weight: "400",
+const yanone = Yanone_Kaffeesatz({
+  weight: "700",
   subsets: ["latin"],
-  variable: "--font-arimo",
+  variable: "--font-yanone",
   display: "swap",
 });
 
 const merriweather = Merriweather({
-  weight: "400",
+  weight: "300",
   subsets: ["latin"],
   variable: "--font-merriweather",
   display: "swap",
@@ -20,7 +20,7 @@ const merriweather = Merriweather({
 
 function App({ Component, pageProps }: AppProps) {
   return (
-    <div className={clsx(arimo.variable, merriweather.variable)}>
+    <div className={clsx(yanone.variable, merriweather.variable)}>
       <Component {...pageProps} />
     </div>
   );

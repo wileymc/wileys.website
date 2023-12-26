@@ -6,6 +6,10 @@ import {
 import { FaCodeBranch } from "react-icons/fa";
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
+import nextI18nextConfig, { languageMap } from "@/next-i18next.config";
+import Logo from "../public/logo-beta.svg";
+import Image from "next/image";
+import { Populist } from "./Populist";
 
 export function Footer() {
   const { i18n } = useTranslation(["common"]);
@@ -14,17 +18,21 @@ export function Footer() {
     const { pathname, asPath, query } = router;
     router.push({ pathname, query }, asPath, { locale: e.target.value });
   };
+  const supportedLanguages = nextI18nextConfig.i18n.locales;
+  console.log(supportedLanguages);
   return (
     <footer className="mt-8  text-white">
       <div className="flex justify-between items-center">
         <select
-          className="bg-glass font-sans p-2 rounded-full border border-slate-800 cursor-pointer text-xs"
+          className="bg-glass font-sans p-2 rounded-full border border-slate-800 cursor-pointer text-lg"
           onChange={handleLanguageChange}
           value={i18n.language}
         >
-          <option value="en">English</option>
-          <option value="es">Español</option>
-          <option value="it">Italiano</option>
+          {supportedLanguages.map((lang) => (
+            <option key={lang} value={lang}>
+              {languageMap[lang]}
+            </option>
+          ))}
         </select>
         <ul className="flex flex-row gap-8 justify-end items-center">
           <a
@@ -60,6 +68,14 @@ export function Footer() {
             className="hover:text-lagoon  cursor-pointer transition-all duration-300"
           >
             <FaCodeBranch size="1.5rem" />
+          </a>
+          <a
+            href="https://populist.us"
+            target="_blank"
+            rel="noreferrer"
+            title="populist.us"
+          >
+            <Populist />
           </a>
         </ul>
       </div>

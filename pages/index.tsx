@@ -23,7 +23,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <main className="antialiased max-w-3xl mb-40 flex flex-col mx-8 mt-8 md:mt-20 lg:mt-32 lg:mx-auto text-">
+      <main className="antialiased max-w-3xl mb-40 flex flex-col mx-8 mt-8 md:mt-20 lg:mt-32 lg:mx-auto">
         <Header />
         <p className="font-serif text-xl">
           <Trans i18nKey="bio">

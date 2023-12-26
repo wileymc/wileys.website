@@ -2,23 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
+html,
+body {
   background-color: #0a0e13;
   /*Linear gradient... */
-  background-image: 
-    radial-gradient(
-     closest-side, #0a081c, #020202
-    );
+  background-image: radial-gradient(closest-side, #0a081c, #020202);
   color: whitesmoke;
-  top:0px;
-  left:0px;
-  height:100%;
-  width:100%;
+  top: 0px;
+  left: 0px;
+  width: 100%;
   overflow: scroll;
   display: flex;
   flex-direction: column;
-  height: 100%;
   margin: auto;
   justify-content: flex-start;
   align-items: center;
+}
+
+ul {
+  letter-spacing: 0.1rem;
 }

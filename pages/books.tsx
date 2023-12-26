@@ -24,7 +24,7 @@ export default function Books() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <main className="antialiased max-w-3xl mb-40 mx-4 mt-8 md:mt-20 lg:mt-32 lg:mx-auto text-white">
+      <main className="antialiased max-w-3xl mb-40 flex flex-col mx-8 mt-8 md:mt-20 lg:mt-32 lg:mx-auto">
         <Header />
         <div className="grid grid-flow-row-dense md:grid-cols-2 gap-4">
           {books.map((book) => (
