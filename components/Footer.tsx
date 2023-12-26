@@ -19,7 +19,6 @@ export function Footer() {
     router.push({ pathname, query }, asPath, { locale: e.target.value });
   };
   const supportedLanguages = nextI18nextConfig.i18n.locales;
-  console.log(supportedLanguages);
   return (
     <footer className="mt-8  text-white">
       <div className="flex justify-between items-center">
