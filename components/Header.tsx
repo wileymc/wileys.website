@@ -9,17 +9,17 @@ export default function Header() {
   const { t } = useTranslation(["common"]);
   const router = useRouter();
   return (
-    <nav className="flex flex-row gap-4 w-full mb-4 leading-none h-auto m-auto items-center">
+    <nav className="flex flex-row gap-4 w-full mb-4 leading-none h-auto m-auto items-end">
       <Link href="/">
-        <div className="w-[80px] h-[80px]">
-          <Doodle width={"80px"} />
+        <div className="w-[75px] h-[75px]">
+          <Doodle width={"75px"} />
         </div>
       </Link>
       <div className="flex flex-col font-sans">
         <h1 className="font-sans text-5xl mt-[-7px] mb-1 bg-gradient-to-r from-cobalt to-lagoon inline-block text-transparent bg-clip-text font-bold">
           Wiley McKay Conte
         </h1>
-        <ul className="flex gap-4 font-sans uppercase text-3xl font-bold leading-5">
+        <ul className="flex gap-4 font-sans uppercase text-3xl font-bold leading-5 justify-between">
           <a href="https://github.com/wileymc">
             <li className="hover:text-lagoon  cursor-pointer transition-all duration-300">
               {t("code")}

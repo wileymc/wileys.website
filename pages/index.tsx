@@ -15,6 +15,14 @@ export async function getServerSideProps({ locale }: { locale: string }) {
 
 export default function Home() {
   const { t } = useTranslation(["common"]);
+  const handlePopulistMouseIn = () => {
+    const populistLogo = document.getElementById("populist-logo");
+    if (populistLogo) populistLogo.classList.add("hover");
+  };
+  const handlePopulistMouseOut = () => {
+    const populistLogo = document.getElementById("populist-logo");
+    if (populistLogo) populistLogo.classList.remove("hover");
+  };
   return (
     <>
       <Head>
@@ -28,14 +36,11 @@ export default function Home() {
         <p className="font-serif text-xl">
           <Trans i18nKey="bio">
             <a
-              href="https://driift.live"
-              className="underline decoration-dotted decoration-lagoon hover:text-lagoon-200"
-            >
-              Driift.
-            </a>
-            <a
               href="https://populist.us"
               className="underline decoration-dotted decoration-lagoon hover:text-lagoon-200"
+              key="populist"
+              onMouseEnter={handlePopulistMouseIn}
+              onMouseLeave={handlePopulistMouseOut}
             >
               Populist
             </a>

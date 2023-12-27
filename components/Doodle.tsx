@@ -1,6 +1,6 @@
 import "css-doodle";
 
-export default function Doodle({ width = "80px" }) {
+export default function Doodle({ width = "75px" }) {
   return (
     <css-doodle>
       {`:doodle {

@@ -3,7 +3,7 @@ import React from "react";
 export function Populist() {
   return (
     <svg
-      id="Layer_1"
+      id="populist-logo"
       data-name="Layer 1"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 220 120.06"
@@ -19,6 +19,8 @@ export function Populist() {
           {`
             svg:hover .cls-1 { fill: #d64646; }
             svg:hover .cls-2 { fill: #006586; }
+            svg.hover .cls-1 { fill: #d64646; }
+            svg.hover .cls-2 { fill: #006586; }
             .cls-1, .cls-2 { fill: #fff; }
           `}
         </style>
