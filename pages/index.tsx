@@ -4,6 +4,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import nextI18nextConfig from "@/next-i18next.config";
 import { Trans, useTranslation } from "next-i18next";
 import Header from "@/components/Header";
+import Script from "next/script";
 
 export async function getServerSideProps({ locale }: { locale: string }) {
   return {
@@ -27,11 +28,8 @@ export default function Home() {
     <>
       <Head>
         <title>Wiley McKay Conte</title>
-        <meta name="description" content="Some dudes website." />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.png" />
       </Head>
-      <main className="antialiased max-w-3xl mb-40 flex flex-col mx-8 mt-8 md:mt-20 lg:mt-32 lg:mx-auto">
+      <main className="flex flex-col max-w-3xl mx-8 mt-8 mb-40 antialiased md:mt-20 lg:mt-32 lg:mx-auto">
         <Header />
         <p className="font-serif text-xl">
           <Trans i18nKey="bio">
@@ -46,6 +44,7 @@ export default function Home() {
             </a>
           </Trans>
         </p>
+
         <Footer />
       </main>
     </>
