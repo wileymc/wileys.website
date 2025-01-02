@@ -20,10 +20,10 @@ export function Footer() {
   };
   const supportedLanguages = nextI18nextConfig.i18n.locales;
   return (
-    <footer className="mt-8  text-white">
-      <div className="flex justify-between items-center">
+    <footer className="mt-8 text-white">
+      <div className="flex items-center justify-between">
         <select
-          className="bg-glass font-sans p-2 rounded-full border border-slate-800 cursor-pointer text-lg"
+          className="p-2 font-sans text-lg border rounded-full cursor-pointer bg-glass border-slate-800"
           onChange={handleLanguageChange}
           value={i18n.language}
         >
@@ -33,12 +33,12 @@ export function Footer() {
             </option>
           ))}
         </select>
-        <ul className="flex flex-row gap-8 justify-end items-center">
+        <ul className="flex flex-row items-center justify-end gap-8">
           <a
             href="https://twitter.com/wileymckayconte"
             target="_blank"
             rel="noreferrer"
-            className="hover:text-lagoon  cursor-pointer transition-all duration-300"
+            className="transition-all duration-300 cursor-pointer hover:text-lagoon"
           >
             <AiFillTwitterCircle size="1.5rem" />
           </a>
@@ -46,7 +46,7 @@ export function Footer() {
             href="https://instagram.com/wileybaba"
             target="_blank"
             rel="noreferrer"
-            className="hover:text-lagoon  cursor-pointer transition-all duration-300"
+            className="transition-all duration-300 cursor-pointer hover:text-lagoon"
           >
             <AiFillInstagram size="1.5rem" />
           </a>
@@ -55,7 +55,7 @@ export function Footer() {
             title="email wiley"
             target="_blank"
             rel="noreferrer"
-            className="hover:text-lagoon  cursor-pointer transition-all duration-300"
+            className="transition-all duration-300 cursor-pointer hover:text-lagoon"
           >
             <AiFillMail size="1.5rem" />
           </a>
@@ -64,7 +64,7 @@ export function Footer() {
             target="_blank"
             rel="noreferrer"
             title="fork this site"
-            className="hover:text-lagoon  cursor-pointer transition-all duration-300"
+            className="transition-all duration-300 cursor-pointer hover:text-lagoon"
           >
             <FaCodeBranch size="1.5rem" />
           </a>
