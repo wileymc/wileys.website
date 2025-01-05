@@ -43,7 +43,7 @@ export function Footer() {
             <AiFillTwitterCircle size="1.5rem" />
           </a>
           <a
-            href="https://instagram.com/wileybaba"
+            href="https://instagram.com/wileymckayconte"
             target="_blank"
             rel="noreferrer"
             className="transition-all duration-300 cursor-pointer hover:text-lagoon"
@@ -60,7 +60,7 @@ export function Footer() {
             <AiFillMail size="1.5rem" />
           </a>
           <a
-            href="https://github.com/wileymc/wileybaba.github.io"
+            href="https://github.com/wileymc/wileys.website"
             target="_blank"
             rel="noreferrer"
             title="fork this site"
